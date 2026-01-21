@@ -51,11 +51,11 @@ CrispScribe is a modern, clean, and focused document editor designed for a distr
 The project follows modern security practices:
 
 * **XSS Prevention**: Content is sanitized and handled through secure React and Quill implementations.
-* * * **Dependency Auditing**: Regularly audited via `npm audit` to ensure all library vulnerabilities are patched.
+* **Dependency Auditing**: Regularly audited via `npm audit` to ensure all library vulnerabilities are patched.
 * **Protected Credentials**: Environment variables are strictly managed and excluded from version control via `.gitignore`.
 
 ## 📄 License
-
+   
     This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
 
 ## Vercel Publish
