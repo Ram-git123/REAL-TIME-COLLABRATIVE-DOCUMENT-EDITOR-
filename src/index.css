@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CrispScribe Design System - Mint Green Accent with Slate Background */
+
+@layer base {
+  :root {
+    --background: 210 20% 96%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 145 50% 62%;
+    --primary-foreground: 222.2 84% 4.9%;
+
+    --secondary: 210 20% 92%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 20% 92%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 145 50% 62%;
+    --accent-foreground: 222.2 84% 4.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 85%;
+    --input: 214.3 31.8% 85%;
+    --ring: 145 50% 62%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 145 50% 62%;
+    --sidebar-primary-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 145 50% 92%;
+    --sidebar-accent-foreground: 222.2 84% 4.9%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 145 50% 62%;
+    
+    /* Custom CrispScribe tokens */
+    --editor-bg: 0 0% 100%;
+    --toolbar-bg: 0 0% 100% / 0.8;
+    --success: 145 50% 50%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 145 50% 55%;
+    --primary-foreground: 222.2 84% 4.9%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 145 50% 55%;
+    --accent-foreground: 222.2 84% 4.9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 145 50% 55%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 145 50% 55%;
+    --sidebar-primary-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 145 50% 55%;
+    
+    --editor-bg: 222.2 84% 8%;
+    --toolbar-bg: 222.2 84% 8% / 0.8;
+    --success: 145 50% 50%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Quill Editor Custom Styles */
+.ql-container {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.ql-editor {
+  min-height: 500px;
+  padding: 2rem 3rem;
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  background: hsl(var(--toolbar-bg));
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+.ql-snow .ql-stroke {
+  stroke: hsl(var(--foreground));
+}
+
+.ql-snow .ql-fill {
+  fill: hsl(var(--foreground));
+}
+
+.ql-snow .ql-picker {
+  color: hsl(var(--foreground));
+}
+
+.ql-snow .ql-picker-options {
+  background: hsl(var(--card)) !important;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+/* Improved font and size picker spacing */
+.ql-snow .ql-picker.ql-font {
+  width: 140px;
+}
+
+.ql-snow .ql-picker.ql-size {
+  width: 70px;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label,
+.ql-snow .ql-picker.ql-size .ql-picker-label {
+  padding-right: 24px;
+  padding-left: 8px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-options {
+  min-width: 160px;
+  padding: 4px 0;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-options {
+  min-width: 80px;
+  padding: 4px 0;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-item,
+.ql-snow .ql-picker.ql-size .ql-picker-item {
+  padding: 8px 14px;
+  display: block;
+}
+
+.ql-snow .ql-active,
+.ql-snow button:hover,
+.ql-snow .ql-picker-label:hover {
+  color: hsl(var(--primary)) !important;
+}
+
+.ql-snow .ql-active .ql-stroke,
+.ql-snow button:hover .ql-stroke {
+  stroke: hsl(var(--primary)) !important;
+}
+
+.ql-snow .ql-active .ql-fill,
+.ql-snow button:hover .ql-fill {
+  fill: hsl(var(--primary)) !important;
+}
+
+/* Custom font faces for Quill */
+.ql-font-calibri {
+  font-family: 'Calibri', sans-serif;
+}
+.ql-font-times-new-roman {
+  font-family: 'Times New Roman', Times, serif;
+}
+.ql-font-arial {
+  font-family: Arial, sans-serif;
+}
+.ql-font-verdana {
+  font-family: Verdana, sans-serif;
+}
+.ql-font-georgia {
+  font-family: Georgia, serif;
+}
+.ql-font-comic-sans {
+  font-family: 'Comic Sans MS', cursive;
+}
+.ql-font-segoe-ui {
+  font-family: 'Segoe UI', sans-serif;
+}
+.ql-font-tahoma {
+  font-family: Tahoma, sans-serif;
+}
+.ql-font-trebuchet {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.ql-font-courier-new {
+  font-family: 'Courier New', monospace;
+}
+.ql-font-sans-serif {
+  font-family: sans-serif;
+}
+.ql-font-serif {
+  font-family: serif;
+}
+.ql-font-monospace {
+  font-family: monospace;
+}
+
+/* Font picker labels */
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="calibri"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="calibri"]::before {
+  content: 'Calibri';
+  font-family: 'Calibri', sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="times-new-roman"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="times-new-roman"]::before {
+  content: 'Times New Roman';
+  font-family: 'Times New Roman', Times, serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="arial"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="arial"]::before {
+  content: 'Arial';
+  font-family: Arial, sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="verdana"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="verdana"]::before {
+  content: 'Verdana';
+  font-family: Verdana, sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="georgia"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="georgia"]::before {
+  content: 'Georgia';
+  font-family: Georgia, serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="comic-sans"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="comic-sans"]::before {
+  content: 'Comic Sans';
+  font-family: 'Comic Sans MS', cursive;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="segoe-ui"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="segoe-ui"]::before {
+  content: 'Segoe UI';
+  font-family: 'Segoe UI', sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="tahoma"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="tahoma"]::before {
+  content: 'Tahoma';
+  font-family: Tahoma, sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="trebuchet"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="trebuchet"]::before {
+  content: 'Trebuchet MS';
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="courier-new"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="courier-new"]::before {
+  content: 'Courier New';
+  font-family: 'Courier New', monospace;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="sans-serif"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="sans-serif"]::before {
+  content: 'Sans Serif';
+  font-family: sans-serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="serif"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="serif"]::before {
+  content: 'Serif';
+  font-family: serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="monospace"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="monospace"]::before {
+  content: 'Monospace';
+  font-family: monospace;
+}
+
+/* Default font label when no font selected */
+.ql-snow .ql-picker.ql-font .ql-picker-label::before {
+  content: 'Font';
+}
+
+/* Size picker default */
+.ql-snow .ql-picker.ql-size .ql-picker-label::before {
+  content: 'Size';
+}
+
+/* Hover effects for picker items */
+.ql-snow .ql-picker.ql-font .ql-picker-item:hover,
+.ql-snow .ql-picker.ql-size .ql-picker-item:hover {
+  background: hsl(var(--muted));
+}
+
+/* Selected item highlight */
+.ql-snow .ql-picker.ql-font .ql-picker-item.ql-selected,
+.ql-snow .ql-picker.ql-size .ql-picker-item.ql-selected {
+  background: hsl(var(--primary) / 0.1);
+  color: hsl(var(--primary));
+}
+
+/* Paper shadow effect */
+.paper-canvas {
+  background: hsl(var(--editor-bg));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius);
+}
+
+/* Glassmorphism toolbar */
+.glass-toolbar {
+  background: hsl(var(--toolbar-bg));
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border) / 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
