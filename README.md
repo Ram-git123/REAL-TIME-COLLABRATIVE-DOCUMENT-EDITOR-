@@ -47,11 +47,12 @@ CrispScribe is a modern, clean, and focused document editor designed for a distr
     Open [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080) to view it in the browser.
 
 ## 🛡️ Security & Auditing
-    The project follows modern security practices:
 
-    * **XSS Prevention**: Content is sanitized and handled through secure React and Quill implementations.
-    * **Dependency Auditing**: Regularly audited via `npm audit` to ensure all library vulnerabilities are patched.
-    * **Protected Credentials**: Environment variables are strictly managed and excluded from version control via `.gitignore`.
+The project follows modern security practices:
+
+* **XSS Prevention**: Content is sanitized and handled through secure React and Quill implementations.
+* * * **Dependency Auditing**: Regularly audited via `npm audit` to ensure all library vulnerabilities are patched.
+* **Protected Credentials**: Environment variables are strictly managed and excluded from version control via `.gitignore`.
 
 ## 📄 License
 
