@@ -56,9 +56,15 @@ The project follows modern security practices:
 
 ## 📄 License
    
-    This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
 
 ## Vercel Publish
 
 
     https://real-time-collabrative-document-edi.vercel.app/
+
+<img width="600" height="500" alt="Screenshot 2026-01-21 162339" src="https://github.com/user-attachments/assets/d49238c1-534c-43fa-801c-fb905032f7b4" />
+<img width="600" height="500" alt="Screenshot 2026-01-21 162414" src="https://github.com/user-attachments/assets/bef186d8-4d8d-4d6b-98f3-d28e2ab5448c" />
+<img width="600" height="500" alt="Screenshot 2026-01-21 162423" src="https://github.com/user-attachments/assets/adae4f2a-362b-4a3a-85a4-497150615c5e" />
+
+
