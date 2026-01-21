@@ -2,7 +2,7 @@
 
 "A collaborative rich-text document editor featuring real-time synchronization, version history, and seamless Word document import."
 
-# CrispScribe
+# 📑 🖋️CrispScribe 
 
 CrispScribe is a modern, clean, and focused document editor designed for a distraction-free writing experience. It features real-time collaboration, a powerful rich-text editor, and seamless document import/export capabilities.
 
@@ -44,7 +44,7 @@ CrispScribe is a modern, clean, and focused document editor designed for a distr
 
     npm run dev
 
-   Open [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080) to view it in the browser.
+    Open [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080) to view it in the browser.
 
 ## 🛡️ Security & Auditing
 
