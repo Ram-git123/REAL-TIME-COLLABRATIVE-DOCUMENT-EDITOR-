@@ -26,11 +26,11 @@ CrispScribe is a modern, clean, and focused document editor designed for a distr
 
 1. **Clone the repository:**
 
-git clone https://github.com/YOUR_USERNAME/crispscribe.git
-cd crispscribe
+ [git clone https://github.com/YOUR_USERNAME/crispscribe.git
+  cd crispscribe](https://github.com/Ram-git123/REAL-TIME-COLLABRATIVE-DOCUMENT-EDITOR-.git)
 
 2. **Install dependencies:**
-```bash
+
 npm install
 
 3. **Environment Configuration:**
