@@ -1,4 +1,5 @@
 # REAL-TIME-COLLABRATIVE-DOCUMENT-EDITOR-
+
 "A collaborative rich-text document editor featuring real-time synchronization, version history, and seamless Word document import."
 
 # CrispScribe
@@ -26,24 +27,24 @@ CrispScribe is a modern, clean, and focused document editor designed for a distr
 
 1. **Clone the repository:**
 
- [git clone https://github.com/YOUR_USERNAME/crispscribe.git
-  cd crispscribe](https://github.com/Ram-git123/REAL-TIME-COLLABRATIVE-DOCUMENT-EDITOR-.git)
-
+     https://github.com/Ram-git123/REAL-TIME-COLLABRATIVE-DOCUMENT-EDITOR-.git
+  
 2. **Install dependencies:**
 
-npm install
+    npm install
 
 3. **Environment Configuration:**
-Create a `.env` file in the root directory and add your Supabase credentials:
 
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   Create a `.env` file in the root directory and add your Supabase credentials:
+
+    VITE_SUPABASE_URL=your_supabase_project_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 4. **Run the development server:**
 
-npm run dev
+    npm run dev
 
-Open [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080) to view it in the browser.
+   Open [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080) to view it in the browser.
 
 ## 🛡️ Security & Auditing
 
